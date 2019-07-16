@@ -4,7 +4,7 @@ import static spark.Spark.get;
 
 public class Hello {
     public static void main(String[] args) {
-        get("/", (req, res) -> "Dead Simple REST Api Implementation !");
+        get("/", (req, res) -> "Dead Simple REST Api Implementation - Via Cloudbuild !");
         get("/hello", (req, res) -> "hello from spark !");
     }
 }

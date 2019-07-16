@@ -1,0 +1,1 @@
+docker run --name demo-dsra -v  -d dsra:latest

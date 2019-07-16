@@ -2,5 +2,5 @@ steps:
   - name: 'gcr.io/cloud-builders/mvn'
     args: ['clean', 'install', 'package']
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'asia.gcr.io/sound-repeater-245511/dsra:cloudbuild', '.']
-images: ['asia.gcr.io/sound-repeater-245511/dsra']
+    args: ['build', '-t', 'asia.gcr.io/${PROJECT_ID}/dsra:cloudbuild', '.']
+images: ['asia.gcr.io/${PROJECT_ID}/dsra']
